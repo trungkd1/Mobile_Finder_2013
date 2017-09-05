@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingTop="@dimen/privacy_padding_top_buttom_text_dialog"
+    android:paddingBottom="@dimen/privacy_padding_top_buttom_text_dialog"
+    android:paddingLeft="@dimen/padding_left_right_text_dialog"
+    android:paddingRight ="@dimen/padding_left_right_text_dialog"
+    android:layout_marginBottom="@dimen/margin_top_buttom"
+    android:layout_marginTop="@dimen/margin_top_buttom"
+    android:background="@drawable/privacy_dialog"
+    android:orientation="vertical" >
+
+  	<TextView
+      	android:id="@+id/text_title"
+      	style="@style/TextMedium"
+      	android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="left"
+      	android:layout_marginBottom="@dimen/padding_top_buttom_text_dialog"
+      	android:textStyle="bold" />
+        
+    <TextView
+        android:id="@+id/text_content"
+        style="@style/TextMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="left"
+        android:singleLine="false"
+    	android:scrollbars="none"
+    	android:layout_weight="1"
+    	android:layout_marginBottom="@dimen/privacy_padding_top_buttom_text_dialog"
+        android:text="@string/content" 
+        android:visibility="gone"/>
+    
+    <LinearLayout 
+        android:id="@+id/webview_container"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/privacy_padding_top_buttom_text_dialog"
+        android:background="@drawable/border_white_bg"
+        android:padding="10dp"
+        android:visibility="gone"
+        >
+        
+	 	<WebView    
+	        android:id="@+id/webview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@android:color/transparent"
+	        android:scrollbars="none"
+	        android:overScrollMode="never"
+	        />
+	 	
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_accept"
+        style="@style/TextGreenButton"
+        android:layout_width="@dimen/width_button_medium"
+        android:layout_height="@dimen/height_button_medium"
+        android:background="@drawable/btn_green"
+        android:layout_gravity="center"
+        android:text="@string/accept" />
+    
+</LinearLayout>
+

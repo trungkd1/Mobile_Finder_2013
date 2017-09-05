@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:layout_marginBottom="@dimen/padding_top_buttom" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left_right"
+        android:paddingRight="@dimen/padding_left_right" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:id="@+id/autoprotect_panel">
+
+            <LinearLayout
+                android:id="@+id/btn_auto_protect"
+                android:layout_width="@dimen/width_button_fuction"
+                android:layout_height="@dimen/height_button_function"
+                android:layout_marginLeft="@dimen/margin_left_right__negative_toggle"
+                android:background="@drawable/button_short_green_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ic_auto_protect"
+                    style="@style/PaddingImage"
+                    android:layout_width="@dimen/diameter"
+                    android:layout_height="@dimen/diameter"
+                    android:layout_marginLeft="@dimen/margin_left_right_button"
+                    android:src="@drawable/ic_auto_protect_selector" />
+
+                <TextView
+                    android:id="@+id/text_auto_protect"
+                    style="@style/TextGreen"
+                    android:layout_width="@dimen/width_text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_textview"
+                    android:ellipsize="end"
+                    android:textColor="@color/auto_protect_text"
+                    android:text="@string/auto_protect" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_auto_protect"
+                android:layout_width="@dimen/width_toggle"
+                android:layout_height="@dimen/height_toggle"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top_buttom_toggle"
+                android:background="@drawable/switch_bg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+		
+        <View
+        android:layout_width="@dimen/width_view"
+        android:layout_height="@dimen/height_view_2" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:focusable="true" 
+            android:focusableInTouchMode="true" android:id="@+id/login_panel">
+
+            <LinearLayout
+                android:layout_width="@dimen/width_button_fuction"
+                android:layout_height="@dimen/height_button_function"
+                android:layout_marginLeft="@dimen/margin_left_right__negative_toggle"
+                android:background="@drawable/button_short_green_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/PaddingImage"
+                    android:layout_width="@dimen/diameter"
+                    android:layout_height="@dimen/diameter"
+                    android:layout_marginLeft="@dimen/margin_left_right_button"
+                    android:src="@drawable/ic_limit_selector" />
+
+                <TextView
+                    style="@style/TextGreen"
+                    android:layout_width="@dimen/width_text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_textview"
+                    android:ellipsize="end"
+                    android:textColor="@color/auto_protect_text"
+                    android:text="@string/limit_login" />
+            </LinearLayout>
+
+            <EditText
+                style="@style/TextBlue"
+                android:id="@+id/edit_limit"
+                android:layout_width="@dimen/width_editText_short"
+                android:layout_height="@dimen/height_editText_short"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/margin_left_right_editText"
+                android:layout_marginRight="@dimen/margin_left_right_editText"
+                android:layout_marginTop="@dimen/margin_top_buttom_button"
+                android:background="@drawable/border_text_limit"
+                android:ems="1"
+                android:digits="123456789"
+                android:maxLength="1"
+                android:inputType="number" />
+        </LinearLayout>
+		
+		<View
+        android:layout_width="@dimen/width_view"
+        android:layout_height="@dimen/height_view_2" />	
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:id="@+id/capture_panel">
+
+            <LinearLayout
+                android:id="@+id/btn_capture"
+                android:layout_width="@dimen/width_button_fuction"
+                android:layout_height="@dimen/height_button_function"
+                android:layout_marginLeft="@dimen/margin_left_right__negative_toggle"
+                android:background="@drawable/button_short_green_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ic_capture"
+                    style="@style/PaddingImage"
+                    android:layout_width="@dimen/diameter"
+                    android:layout_height="@dimen/diameter"
+                    android:layout_marginLeft="@dimen/margin_left_right_button"
+                    android:src="@drawable/ic_camera_selector" />
+
+                <TextView
+                    android:id="@+id/text_capture"
+                    style="@style/TextGreen"
+                    android:layout_width="@dimen/width_text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_textview"
+                    android:ellipsize="end"
+                    android:textColor="@color/auto_protect_text"
+                    android:text="@string/capture" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_capture"
+                android:layout_width="@dimen/width_toggle"
+                android:layout_height="@dimen/height_toggle"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top_buttom_toggle"
+                android:background="@drawable/switch_bg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+		
+		<View
+        android:layout_width="@dimen/width_view"
+        android:layout_height="@dimen/height_view_2" />	
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:id="@+id/getLocation_panel">
+
+            <LinearLayout
+                android:id="@+id/btn_locate"
+                android:layout_width="@dimen/width_button_fuction"
+                android:layout_height="@dimen/height_button_function"
+                android:layout_marginLeft="@dimen/margin_left_right__negative_toggle"
+                android:background="@drawable/button_short_green_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ic_locate"
+                    style="@style/PaddingImage"
+                    android:layout_width="@dimen/diameter"
+                    android:layout_height="@dimen/diameter"
+                    android:layout_marginLeft="@dimen/margin_left_right_button"
+                    android:src="@drawable/ic_wifi_selector" />
+
+                <TextView
+                    android:id="@+id/text_locate"
+                    style="@style/TextGreen"
+                    android:layout_width="@dimen/width_text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_textview"
+                    android:ellipsize="end"
+                    android:textColor="@color/auto_protect_text"
+                    android:text="@string/locate" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_locate"
+                android:layout_width="@dimen/width_toggle"
+                android:layout_height="@dimen/height_toggle"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top_buttom_toggle"
+                android:background="@drawable/switch_bg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <View
+        android:layout_width="@dimen/width_view"
+        android:layout_height="@dimen/height_view_2" />	
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:id="@+id/displayIcon_panel">
+
+            <LinearLayout
+                android:id="@+id/btn_display_icon"
+                android:layout_width="@dimen/width_button_fuction"
+                android:layout_height="@dimen/height_button_function"
+                android:layout_marginLeft="@dimen/margin_left_right__negative_toggle"
+                android:background="@drawable/button_short_green_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ic_display_icon"
+                    style="@style/PaddingImage"
+                    android:layout_width="@dimen/diameter"
+                    android:layout_height="@dimen/diameter"
+                    android:layout_marginLeft="@dimen/margin_left_right_button"
+                    android:src="@drawable/ic_display_icon_selector" />
+
+                <TextView
+                    android:id="@+id/text_display_icon"
+                    style="@style/TextGreen"
+                    android:layout_width="@dimen/width_text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_textview"
+                    android:ellipsize="end"
+                    android:textColor="@color/auto_protect_text"
+                    android:text="@string/display_icon" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_display_icon"
+                android:layout_width="@dimen/width_toggle"
+                android:layout_height="@dimen/height_toggle"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top_buttom_toggle"
+                android:background="@drawable/switch_bg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <View
+        android:layout_width="@dimen/width_view"
+        android:layout_height="@dimen/height_view_2" />	
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:id="@+id/backup_panel">
+
+            <LinearLayout
+                android:id="@+id/btn_back_up"
+                android:layout_width="@dimen/width_button_fuction"
+                android:layout_height="@dimen/height_button_function"
+                android:layout_marginLeft="@dimen/margin_left_right__negative_toggle"
+                android:background="@drawable/button_short_green_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ic_back_up"
+                    style="@style/PaddingImage"
+                    android:layout_width="@dimen/diameter"
+                    android:layout_height="@dimen/diameter"
+                    android:layout_marginLeft="@dimen/margin_left_right_button"
+                    android:src="@drawable/ic_save_contact_selector" />
+
+                <TextView
+                    android:id="@+id/text_back_up"
+                    style="@style/TextGreen"
+                    android:layout_width="@dimen/width_text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_textview"
+                    android:ellipsize="end"
+                    android:textColor="@color/auto_protect_text"
+                    android:text="@string/backup_data" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_backup_data"
+                android:layout_width="@dimen/width_toggle"
+                android:layout_height="@dimen/height_toggle"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top_buttom_toggle"
+                android:background="@drawable/switch_bg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+        
+        <View
+        android:layout_width="@dimen/width_view"
+        android:layout_height="@dimen/height_view_2" />	
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:id="@+id/wipedata_panel">
+
+            <LinearLayout
+                android:id="@+id/btn_wipe_data"
+                android:layout_width="@dimen/width_button_fuction"
+                android:layout_height="@dimen/height_button_function"
+                android:layout_marginLeft="@dimen/margin_left_right__negative_toggle"
+                android:background="@drawable/button_short_green_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ic_wipe_data"
+                    style="@style/PaddingImage"
+                    android:layout_width="@dimen/diameter"
+                    android:layout_height="@dimen/diameter"
+                    android:layout_marginLeft="@dimen/margin_left_right_button"
+                    android:src="@drawable/ic_delete_data_selector" />
+
+                <TextView
+                    android:id="@+id/text_wipe_data"
+                    style="@style/TextGreen"
+                    android:layout_width="@dimen/width_text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_textview"
+                    android:ellipsize="end"
+                    android:textColor="@color/auto_protect_text"
+                    android:text="@string/wipe_data" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_wipe_data"
+                android:layout_width="@dimen/width_toggle"
+                android:layout_height="@dimen/height_toggle"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top_buttom_toggle"
+                android:background="@drawable/switch_bg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

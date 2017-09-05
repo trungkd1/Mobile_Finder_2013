@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#02457c</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="accout_name">#e9e9e9</color>
+    <color name="account_email">#bdd3e5</color>
+    <color name="red">#ba0101</color>
+    <color name="green">#e63e5f00</color>
+    <color name="orange">#ffaa00</color>
+    <color name="blue">#00aaff</color>
+    <color name="gray">#999999</color>
+    <color name="yellow">#93580c</color>
+    <color name="option_menu_on">#66000000</color>
+    <color name="option_menu_off">#00000000</color>
+    <color name="menu_text_default">#e5e5e5</color>
+    <color name="menu_text_hl">#dc9226</color>
+</resources>

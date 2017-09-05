@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.nahi.vn.mobilefinder.customui.ResizableImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bg_main_top" />
+
+    <com.nahi.vn.mobilefinder.customui.CustomKeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main_bottom"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/padding_left_right_number"
+        android:paddingRight="@dimen/padding_left_right_number" >
+    </com.nahi.vn.mobilefinder.customui.CustomKeyboardView>
+
+</LinearLayout>

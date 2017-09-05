@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_top_buttom"  
+    android:paddingLeft="@dimen/padding_left_right"
+    android:paddingRight="@dimen/padding_left_right">
+
+    <TextView
+        android:id="@+id/text1"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rename_device" 
+        android:layout_marginBottom="@dimen/margin_top_buttom_textview"/>
+
+    <EditText
+        style="@style/TextMedium"
+        android:id="@+id/edit_setname_device"
+        android:layout_width="@dimen/width_editText_long"
+        android:layout_height="@dimen/height_editText_long"
+        android:layout_below="@+id/text1"
+        android:background="@drawable/border_text" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="@dimen/width_view"
+        android:layout_height="@dimen/height_view"
+        android:layout_below="@+id/edit_setname_device" />
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:text="@string/set_phone_number" 
+        android:layout_marginBottom="@dimen/margin_top_buttom_textview"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:orientation="horizontal" >
+
+        <EditText
+            style="@style/TextMedium"
+            android:id="@+id/edit_number"
+            android:layout_width="@dimen/width_editText"
+            android:layout_height="@dimen/height_editText"
+            android:background="@drawable/border_text"
+            android:editable="false"
+            android:singleLine="true" >
+        </EditText>
+
+        <View
+            android:layout_width="@dimen/width_view"
+            android:layout_height="@dimen/height_view" />
+
+        <Button
+            android:layout_gravity="right"
+            android:id="@+id/btn_set_phone_number"
+            android:layout_width="@dimen/width_button"
+            android:layout_height="@dimen/height_button"
+            android:background="@drawable/button_add_bg" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="@dimen/width_view"
+        android:layout_height="@dimen/height_view"
+        android:layout_below="@+id/layout1" />
+
+    <TextView
+        android:id="@+id/text3"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:text="@string/set_account_NAHI" 
+        android:layout_marginBottom="@dimen/margin_top_buttom_textview"/>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text3"
+        android:orientation="horizontal" >
+
+        <EditText
+            style="@style/TextMedium"
+            android:id="@+id/edit_set_account"
+            android:layout_width="@dimen/width_editText"
+            android:layout_height="@dimen/height_editText"
+            android:background="@drawable/border_text"
+            android:enabled="false"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="@dimen/width_view"
+            android:layout_height="@dimen/height_view" />
+
+        <Button
+            android:layout_gravity="right"
+            android:id="@+id/btn_set_account_NAHI"
+            android:layout_width="@dimen/width_button"
+            android:layout_height="@dimen/height_button"
+            android:background="@drawable/button_add_bg" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="@dimen/width_view"
+        android:layout_height="@dimen/height_view"
+        android:layout_below="@+id/layout2" />
+
+    <TextView
+        android:id="@+id/text4"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+        android:text="@string/set_language" 
+        android:layout_marginBottom="@dimen/margin_top_buttom_textview"/>
+
+    <EditText
+        style="@style/TextMedium"
+        android:id="@+id/edit_languages"
+        android:layout_width="@dimen/width_editText_long"
+        android:layout_height="@dimen/height_editText_long"
+        android:layout_below="@+id/text4"
+        android:background="@drawable/border_text"
+        android:editable="false"
+     	android:singleLine="true"
+     	android:maxLines="1"
+     	android:scrollHorizontally="true"
+     	android:ellipsize="end"
+         />
+    
+</RelativeLayout>

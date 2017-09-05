@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_top_buttom" >
+
+    <LinearLayout
+        android:id="@+id/btn_feed_back"
+        android:layout_width="@dimen/width_main"
+        android:layout_height="@dimen/height_main"
+        android:background="@drawable/button_orange_bg"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/PaddingImage"
+            android:layout_width="@dimen/diameter_main"
+            android:layout_height="@dimen/diameter_main"
+            android:layout_marginLeft="@dimen/margin_left_right_main_button"
+            android:src="@drawable/ic_feedback" />
+
+        <TextView
+            style="@style/TextOrange"
+            android:layout_width="@dimen/width_text"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/feedback" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_share"
+        android:layout_width="@dimen/width_main"
+        android:layout_height="@dimen/height_main"
+        android:background="@drawable/button_orange_bg"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/PaddingImage"
+            android:layout_width="@dimen/diameter_main"
+            android:layout_height="@dimen/diameter_main"
+            android:layout_marginLeft="@dimen/margin_left_right_main_button"
+            android:src="@drawable/ic_share" />
+
+        <TextView
+            style="@style/TextOrange"
+            android:layout_width="@dimen/width_text"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/share" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_update"
+        android:layout_width="@dimen/width_main"
+        android:layout_height="@dimen/height_main"
+        android:background="@drawable/button_orange_bg"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/PaddingImage"
+            android:layout_width="@dimen/diameter_main"
+            android:layout_height="@dimen/diameter_main"
+            android:layout_marginLeft="@dimen/margin_left_right_main_button"
+            android:src="@drawable/ic_update" />
+
+        <TextView
+            style="@style/TextOrange"
+            android:layout_width="@dimen/width_text"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/update" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_about"
+        android:layout_width="@dimen/width_main"
+        android:layout_height="@dimen/height_main"
+        android:background="@drawable/button_orange_bg"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/PaddingImage"
+            android:layout_width="@dimen/diameter_main"
+            android:layout_height="@dimen/diameter_main"
+            android:layout_marginLeft="@dimen/margin_left_right_main_button"
+            android:src="@drawable/ic_introduction" />
+
+        <TextView
+            style="@style/TextOrange"
+            android:layout_width="@dimen/width_text"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/about" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_uninstall"
+        android:layout_width="@dimen/width_main"
+        android:layout_height="@dimen/height_main"
+        android:background="@drawable/button_orange_bg"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/PaddingImage"
+            android:layout_width="@dimen/diameter_main"
+            android:layout_height="@dimen/diameter_main"
+            android:layout_marginLeft="@dimen/margin_left_right_main_button"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            style="@style/TextOrange"
+            android:layout_width="@dimen/width_text"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/uninstall" />
+    </LinearLayout>
+
+</LinearLayout>

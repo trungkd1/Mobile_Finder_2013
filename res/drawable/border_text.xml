@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+  <stroke android:width="@dimen/stroke_editText" android:color="#ccffffff"/>
+  	<solid android:color="#80dcf5ff"/>
+    <corners android:radius="@dimen/corners_editText" />
+    <padding android:left="@dimen/padding_left_right__login"/>
+</shape>
+

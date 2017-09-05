@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_top_buttom_login" >
+
+    <EditText
+        android:id="@+id/edit_username"
+        style="@style/TextMedium"
+        android:layout_width="@dimen/width_editText_login"
+        android:layout_height="@dimen/height_editText_login"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:layout_marginTop="@dimen/margin_left_right_toggle"
+        android:background="@drawable/border_text"
+        android:hint="@string/username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        style="@style/TextMedium"
+        android:layout_width="@dimen/width_editText_login"
+        android:layout_height="@dimen/height_editText_login"
+        android:layout_below="@+id/edit_username"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_left_right_toggle"
+        android:background="@drawable/border_text"
+        android:ems="4"
+        android:textStyle="italic"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/text_register_account"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edit_username"
+        android:layout_below="@+id/edit_password"
+        android:layout_marginTop="@dimen/margin_left_right_toggle"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="@string/register" />
+
+    <TextView
+        android:id="@+id/text_forget_password"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_register_account"
+        android:layout_marginTop="@dimen/margin_left_right_toggle"
+        android:autoLink="web"
+        android:ellipsize="end"
+        android:linksClickable="true"
+        android:singleLine="true"
+        android:text="@string/forgot_password" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/TextGreenLogin"
+        android:layout_width="@dimen/width_button_login"
+        android:layout_height="@dimen/height_button_login"
+        android:layout_below="@+id/text_forget_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_left_right_toggle"
+        android:background="@drawable/btn_green"
+        android:paddingBottom="@dimen/margin_top_buttom_toggle"
+        android:text="@string/login"/>
+
+</RelativeLayout>

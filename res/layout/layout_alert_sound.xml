@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/layout_lock"
+        android:layout_width="@dimen/width_lock"
+        android:layout_height="@dimen/height_lock"
+        android:contentDescription="@string/content_description_img"
+        android:src="@drawable/lock"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_alert"
+        android:layout_width="@dimen/width_dialog"
+        android:layout_height="@dimen/height_dialog"
+        android:background="@drawable/dialog"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left_right_dialog"
+        android:paddingRight="@dimen/padding_left_right_dialog" >
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_weight="0.3"
+            android:id="@+id/alert_image"
+            android:layout_width="@dimen/width_bell"
+            android:layout_height="@dimen/height_bell"
+            android:contentDescription="@string/content_description_img"
+            android:src="@drawable/ic_bell"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_message"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/dismiss_alert"
+                style="@style/TextOrange"
+                android:layout_width="@dimen/width_button_medium"
+                android:layout_height="@dimen/height_button_medium"
+                android:background="@drawable/btn_no"
+                android:text="@string/stop" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

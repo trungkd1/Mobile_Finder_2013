@@ -1,0 +1,138 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 7" tablets) here.
+
+    -->
+	<dimen name="height_main">140dp</dimen>
+	<dimen name="width_main">420dp</dimen>
+	
+    <dimen name="height_button_function">125dp</dimen>
+    <dimen name="width_button_fuction">380dp</dimen>
+    
+    <dimen name="height_button">75dp</dimen>
+    <dimen name="width_button">100dp</dimen>
+    
+    <dimen name="height_button_premium">50dp</dimen>
+    <dimen name="width_button_premium">70dp</dimen>
+    
+    <dimen name="diameter_main">100dp</dimen> 
+    
+    <dimen name="diameter">100dp</dimen>  
+    
+    <dimen name="height_button_number">100dp</dimen> 
+    
+    <dimen name="width_text">280dp</dimen> 
+    <dimen name="height_text">120dp</dimen>
+    
+    <dimen name="width_editText_login">370dp</dimen>
+    <dimen name="height_editText_login">80dp</dimen>
+    
+    <dimen name="height_button_medium">55dp</dimen>
+    <dimen name="width_button_medium">126dp</dimen>
+    
+    <dimen name="height_button_large">80dp</dimen>
+    <dimen name="width_button_large">200dp</dimen>
+    
+    <dimen name="height_button_login">80dp</dimen>
+    <dimen name="width_button_login">240dp</dimen>
+    
+    <dimen name="width_toggle">124dp</dimen>
+    <dimen name="height_toggle">50dp</dimen>
+    
+    <dimen name="width_editText">300dp</dimen>
+    <dimen name="height_editText">75dp</dimen>
+    
+    <dimen name="width_editText_medium">350dp</dimen>
+    <dimen name="height_editText_medium">75dp</dimen>
+    
+    <dimen name="width_logo">70dp</dimen>
+    <dimen name="height_logo">70dp</dimen>
+    
+    <dimen name="width_bell">240dp</dimen>
+    <dimen name="height_bell">150dp</dimen>
+    
+    <dimen name="width_lock">400dp</dimen>
+    <dimen name="height_lock">400dp</dimen>
+    
+    <dimen name="width_dialog">450dp</dimen>
+    <dimen name="height_dialog">300dp</dimen>
+    
+    <dimen name="width_editText_long">450dp</dimen>
+    <dimen name="height_editText_long">75dp</dimen>
+    
+    <dimen name="width_editText_short">110dp</dimen>
+    <dimen name="height_editText_short">70dp</dimen>
+    
+    <dimen name="width_editText_number">120dp</dimen>
+    <dimen name="height_editText_number">70dp</dimen>
+    
+    <dimen name="width_view">50dp</dimen>
+    <dimen name="height_view">40dp</dimen>
+    <dimen name="height_view_2">30dp</dimen>
+    <dimen name="height_view_3">150dp</dimen>
+    <dimen name="width_view_2">30dp</dimen>
+    <dimen name="width_view_3">10dp</dimen>
+    
+    <dimen name="margin_left_right">30dp</dimen>
+    <dimen name="margin_top_buttom">45dp</dimen>
+    
+    <dimen name="margin_left_right_logo">10dp</dimen>
+    <dimen name="margin_left_right_button">10dp</dimen>
+    <dimen name="margin_top_buttom_button">8dp</dimen>
+    
+    <dimen name="margin_left_right_toggle">20dp</dimen>
+    <dimen name="margin_top_buttom_toggle">12dp</dimen>
+    
+    <dimen name="margin_left_right_textview">0dp</dimen>
+    <dimen name="margin_top_buttom_textview">5dp</dimen>
+    
+    <dimen name="margin_left_right_editText">10dp</dimen>
+    
+    <dimen name="margin_left_right__negative_button">-10dp</dimen>
+    <dimen name="margin_left_right__negative_toggle">-10dp</dimen>
+    <dimen name="margin_left_right__negative_textview">0dp</dimen>
+    
+    <dimen name="padding_top_buttom_login">10dp</dimen>   
+    <dimen name="padding_left_right__login">20dp</dimen>
+    
+    <dimen name="padding_top_buttom">70dp</dimen>    
+    <dimen name="padding_left_right">10dp</dimen>
+    
+    <dimen name="padding_left_right_dialog">50dp</dimen>
+    <dimen name="padding_top_buttom_dialog">30dp</dimen> 
+
+    <dimen name="padding_left_right_text_dialog">50dp</dimen>
+    <dimen name="padding_top_buttom_text_dialog">20dp</dimen>
+    
+    <dimen name="padding_top_buttom_button">11dp</dimen> 
+    
+     <dimen name="padding_left_right_number">25dp</dimen>
+    
+     <dimen name="margin_left_right_main_button">15dp</dimen>
+    
+    <dimen name="margin_left_right_button_number">24dp</dimen>
+    <dimen name="margin_top_bottom_button_number">40dp</dimen> 
+    
+	<dimen name="text_size">20dp</dimen>
+	
+	<dimen name="text_size_button">27dp</dimen>
+	
+	<dimen name="text_size_login">30dp</dimen>
+	
+	<dimen name="text_size_title">35dp</dimen>
+	
+	<dimen name="corners_editText_number">20dp</dimen>
+	
+	<dimen name="corners_editText">30dp</dimen>
+	
+	<dimen name="stroke_editText">2dp</dimen>
+	
+	<dimen name="text_size_number">40dp</dimen>
+	
+	<dimen name="privacy_padding_top_buttom_text_dialog">50dp</dimen>	
+	
+	<dimen name="radius_border_white_bg">20dp</dimen>	
+	
+</resources> 

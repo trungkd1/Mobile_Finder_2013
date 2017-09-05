@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="@dimen/width_dialog"
+    android:layout_height="@dimen/height_dialog"
+    android:layout_gravity="center"
+   	android:layout_marginTop="@dimen/padding_top_buttom_text_dialog"
+    android:layout_marginBottom="@dimen/padding_top_buttom_text_dialog"
+    android:background="@drawable/dialog"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+    
+ 	<TextView
+	     android:id="@+id/text_title"
+	     style="@style/TextTitle"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:maxLines="1"
+	     android:layout_marginTop="@dimen/padding_top_buttom_text_dialog"
+	     android:layout_marginBottom="@dimen/padding_top_buttom_text_dialog"
+	     android:paddingLeft="@dimen/padding_left_right_text_dialog"
+	     android:paddingRight="@dimen/padding_left_right_text_dialog"
+	     android:singleLine="true"
+	     android:ellipsize="marquee"
+	     android:marqueeRepeatLimit="marquee_forever"
+	     android:scrollHorizontally="true"
+	     android:focusable="true"
+	     android:focusableInTouchMode="true"
+	     android:text="@string/title"
+	     android:textStyle="bold" />
+
+    <View
+        android:id="@+id/separator__privacy"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_content"
+        style="@style/TextMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginBottom="@dimen/padding_top_buttom_text_dialog"
+        android:paddingLeft="@dimen/padding_left_right_text_dialog"
+        android:paddingRight="@dimen/padding_left_right_text_dialog"
+        android:text="@string/content" />
+
+    <EditText
+        android:id="@+id/edit_content"
+        style="@style/TextLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left|center"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/padding_top_buttom_text_dialog"
+        android:layout_marginBottom="@dimen/padding_top_buttom_dialog" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/TextGreenButton"
+            android:layout_width="@dimen/width_button_medium"
+            android:layout_height="@dimen/height_button_medium"
+            android:layout_marginRight="@dimen/padding_left_right"
+            android:background="@drawable/btn_yes"
+            android:text="@string/ok" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/TextOrange"
+            android:layout_width="@dimen/width_button_medium"
+            android:layout_height="@dimen/height_button_medium"
+            android:layout_marginLeft="@dimen/padding_left_right"
+            android:background="@drawable/btn_no"
+            android:text="@string/cancel" />
+        
+    </LinearLayout>
+
+</LinearLayout>

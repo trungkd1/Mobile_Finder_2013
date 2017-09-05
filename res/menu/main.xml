@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:title="@string/feedback" android:id="@+id/menu_feedback"></item>
+    <item android:title="@string/share" android:id="@+id/menu_share"></item>
+    <item android:title="@string/about" android:id="@+id/menu_about"></item>
+    <item android:title="@string/uninstall" android:id="@+id/menu_uninstall"></item>
+    <item android:title="@string/update" android:id="@+id/menu_update"></item>
+
+      
+</menu>

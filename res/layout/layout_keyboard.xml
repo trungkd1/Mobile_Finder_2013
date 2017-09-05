@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_bottom_button_number"
+        android:layout_marginLeft="@dimen/margin_left_right_button_number"
+        android:layout_marginRight="@dimen/margin_left_right_button_number"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" 
+        android:paddingRight="5dp">
+
+        <EditText
+            android:id="@+id/edittext1"
+            android:layout_width="@dimen/width_editText_number"
+            android:layout_height="@dimen/height_editText_number"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:enabled="false"
+            android:background="@drawable/border_text_number"
+            android:inputType="numberPassword" 
+            style="@style/TextMedium"/>
+
+        <EditText
+            android:id="@+id/edittext2"
+            android:layout_width="@dimen/width_editText_number"
+            android:layout_height="@dimen/height_editText_number"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_left_right_button_number"
+            android:layout_weight="1"
+           	android:maxLength="1"
+           	android:enabled="false"
+            android:background="@drawable/border_text_number"
+            android:inputType="numberPassword"
+            style="@style/TextMedium" />
+
+        <EditText
+            android:id="@+id/edittext3"
+            android:layout_width="@dimen/width_editText_number"
+            android:layout_height="@dimen/height_editText_number"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_left_right_button_number"
+            android:layout_weight="1"
+           	android:maxLength="1"
+           	android:enabled="false"
+            android:background="@drawable/border_text_number"
+            android:inputType="numberPassword" 
+            style="@style/TextMedium"/>
+
+        <EditText
+            android:id="@+id/edittext4"
+            android:layout_width="@dimen/width_editText_number"
+            android:layout_height="@dimen/height_editText_number"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_left_right_button_number"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:enabled="false"
+            android:background="@drawable/border_text"
+            android:inputType="numberPassword"
+            style="@style/TextMedium" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/keyboard_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_top_bottom_button_number"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/key_button_1"
+                style="@style/KeyButton"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:onClick="onClickKey"
+                android:tag="1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/key_button_2"
+                style="@style/KeyButton"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:layout_marginLeft="@dimen/margin_left_right_button_number"
+                android:onClick="onClickKey"
+                android:tag="2"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/key_button_3"
+                style="@style/KeyButton"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:layout_marginLeft="@dimen/margin_left_right_button_number"
+                android:onClick="onClickKey"
+                android:tag="3"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_top_bottom_button_number"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/key_button_4"
+                style="@style/KeyButton"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:onClick="onClickKey"
+                android:tag="4"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/key_button_5"
+                style="@style/KeyButton"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:layout_marginLeft="@dimen/margin_left_right_button_number"
+                android:onClick="onClickKey"
+                android:tag="5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/key_button_6"
+                style="@style/KeyButton"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:layout_marginLeft="@dimen/margin_left_right_button_number"
+                android:onClick="onClickKey"
+                android:tag="6"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_top_bottom_button_number"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/key_button_7"
+                style="@style/KeyButton"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:onClick="onClickKey"
+                android:tag="7"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/key_button_8"
+                style="@style/KeyButton"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:layout_marginLeft="@dimen/margin_left_right_button_number"
+                android:onClick="onClickKey"
+                android:tag="8"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/key_button_9"
+                style="@style/KeyButton"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:layout_marginLeft="@dimen/margin_left_right_button_number"
+                android:onClick="onClickKey"
+                android:tag="9"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_top_bottom_button_number"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/key_button_go"
+                style="@style/KeyButtonOk"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:onClick="onClickKey"
+                android:tag="-2" />
+
+            <Button
+                android:id="@+id/key_button_0"
+                style="@style/KeyButton"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:layout_marginLeft="@dimen/margin_left_right_button_number"
+                android:onClick="onClickKey"
+                
+                android:tag="0"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/key_button_clear"
+                style="@style/KeyButtonRefresh"
+                android:layout_width="@dimen/height_button_number"
+                android:layout_height="@dimen/height_button_number"
+                android:layout_marginLeft="@dimen/margin_left_right_button_number"
+                android:onClick="onClickKey"
+                android:tag="-3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
